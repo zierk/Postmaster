@@ -1,0 +1,9 @@
+## Title: |cFFFFB0Postmaster|r 1.0.3 - By |cFF8800Zierk|r
+## Description: Lightweight mail addon to automaticly loot and delete mail
+## APIVersion: 100003
+## SavedVariables: Postmaster_SavedVariables
+## Author: Zierk
+## Version: 1.0.3
+
+Postmaster.lua
+Postmaster.xml

@@ -1,0 +1,55 @@
+<GuiXml>
+    <Controls>
+        <TopLevelControl name="Postmaster" mouseEnabled="true" movable="true" hidden="true" clampedToScreen="true">
+            <Dimensions x="126" y="200"/>
+                       
+            <OnMoveStop>
+            	PMEventHandlers.pOnMoveStop()
+            </OnMoveStop>
+
+            <Controls>
+                <Backdrop name="$(parent)BG" inherits="ZO_ThinBackdrop" />
+
+				<Button name="$(parent)TakeButton" font="ZoFontGame" color="CFDCBD" mouseEnabled="true" 
+				        verticalAlignment="CENTER" horizontalAlignment="CENTER" text="Take">
+					<Dimensions x="100" y="30" />
+					<Anchor point="CENTER" offsetY="35" />
+					
+					<Controls>
+						<Backdrop name="$(parent)BG" inherits="ZO_ThinBackdrop" />
+					</Controls>
+					
+					<OnMouseDown>
+						PMEventHandlers.pTake()
+					</OnMouseDown>
+	
+				</Button>				
+				
+				<Button name="$(parent)TakeAllButton" font="ZoFontGame" color="CFDCBD" mouseEnabled="true" 
+				        verticalAlignment="CENTER" horizontalAlignment="CENTER" text="Take All">
+					<Dimensions x="100" y="30" />
+					<Anchor point="CENTER" offsetY="75"/>
+					
+					<Controls>
+						<Backdrop name="$(parent)BG" inherits="ZO_ThinBackdrop" />
+					</Controls>
+					
+					<OnMouseDown>
+						PMEventHandlers.pTakeAll()
+					</OnMouseDown>
+	
+				</Button>
+				
+				<Label name="$(parent)ForLabel" font="ZoFontGame" color="CFDCBD" wrapMode="ELLIPSIS" 
+				       verticalAlignment="CENTER" horizontalAlignment="CENTER" text="Postmaster">
+					<Dimensions x="100" y="30" />
+                    <Anchor point="TOP" />
+
+                </Label>
+            </Controls>
+			
+        </TopLevelControl>				
+				
+    </Controls>
+	
+</GuiXml>
